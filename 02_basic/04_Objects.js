@@ -32,3 +32,33 @@ const obj4 = {5: "a",6: "b"}
 // const obj3 = Object.assign(obj1,obj2)
 // const obj3 = Object.assign({},obj1,obj2,obj4)
 // console.log(obj3)
+
+
+// destructuring of objects
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const { courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+// console.log(instructor);
+
+// const navbar = ({company}) => {                //this is call destructing
+
+// }
+
+navbar(company = "hitesh")
+
+
+// {
+//     name : "Abhay",
+//     coursename : "js in hindi",
+//     price : "free"
+// }
+
